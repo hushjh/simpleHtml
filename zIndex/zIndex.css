@@ -1,0 +1,47 @@
+#a {
+  position: relative;
+  z-index:2;
+}
+
+#a1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  top: 0;
+  left: 10px;
+  /* z-index: 1; */
+}
+#a2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  top: 40px;
+  left: 50px;
+  /* z-index: 0; */
+  transition: all 2s linear;
+  transform: translate(100px,100px);
+  will-change: transform;
+}
+#b {
+  position: relative;
+  top: 80px;
+  z-index:1;
+}
+#b1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: lightgrey;
+  top: 0;
+  left: 10px;
+}
+#b2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: lightgoldenrodyellow;
+  top: 40px;
+  left: 50px;
+}

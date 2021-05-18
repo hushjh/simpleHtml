@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>css阻塞</title>
+    <meta charset="UTF-8">
+    <style>
+    h1 {
+        color: red !important
+    }
+    </style>
+    <script>
+    // 第一次测试部分
+    function h() {
+        console.log(document.querySelectorAll('h1'))
+    }
+    setTimeout(h, 0)
+    ///////////////////////
+    
+    
+    
+    // 第二次测试部分
+    console.log('before css');
+    var startTime = new Date()
+    ///////////////////////
+    </script>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Hello World!! color:red</h1>
+
+    <script>
+    // 第二次测试
+    var endTime = new Date();
+    console.log('after css');
+    console.log('耗时' + (endTime - startTime) + 'ms');
+    </script>
+</body>
+
+</html>
