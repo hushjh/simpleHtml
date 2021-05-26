@@ -1,0 +1,30 @@
+{
+  "name": "simpleHtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "port": "8080"
+  },
+  "scripts": {
+    "cover": "node scripts/cover.js",
+    "start": "node ./src/nodejs/server.js 1 2 3",
+    "view": "echo $npm_package_repository_type && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hushjh/simpleHtml.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hushjh/simpleHtml/issues"
+  },
+  "homepage": "https://github.com/hushjh/simpleHtml#readme",
+  "devDependencies": {
+    "chalk": "^4.1.1",
+    "shelljs": "^0.8.4"
+  }
+}
