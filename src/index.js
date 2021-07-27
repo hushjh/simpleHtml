@@ -1,3 +1,20 @@
+const price = 300;
+const rooms = [
+  {
+    price: 600
+  },
+  {
+    price: 400
+  },
+  {
+    price: 500
+  }
+]
+if (rooms.every(item => price < item.price)) {
+  console.log("is the lowest price");
+} else {
+  console.log("not")
+}
 // const element = <h1>Hello, world</h1>;
 // ReactDOM.render(
 //   element,
