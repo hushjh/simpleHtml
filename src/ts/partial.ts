@@ -108,7 +108,34 @@ interface CreateArrayFunc<T> {
   (length: number, value: T): Array<T>;
 }
 let createArray: CreateArrayFunc<any>;
+
+/** 泛型的动机 和 示例 */
+class Queue<T> {
+  private data: T[] = [];
+  push = (item: T) => this.data.push(item);
+  pop = (): T | undefined => this.data.shift();
+}
+const queue = new Queue<number>();
+queue.push(0);
+queue.push(1);
+console.log(queue.pop().toPrecision(1));
+console.log(queue.pop().toPrecision(1));
+
+
+function identity<T extends Lengthwise>(arg: T): T {
+  console.log(arg.length);
+  return arg;
+}
+let output = identity("myString");
+
+interface GenericIdentityFn<T> {
+  <T extends Lengthwise>(arg: T): T;
+}
+// let myIdentity: { <T extends Lengthwise>(arg: T): T } = identity;
+let myIdentity: GenericIdentityFn<number> = identity;
+
 class GenericNumber<T> {
   zeroValue: T;
   add: (x: T, y: T) => T;
 }
+let myGenericNumber = new GenericNumber<number>();
