@@ -1,0 +1,22 @@
+.container{
+  border: 10px solid black;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  position: relative;
+  top: 10px;
+}
+.container div{
+  height: 100%;
+}
+.a{
+  background-color: red;
+  width:100px;
+  position: relative;
+  left:-3%;
+  transform: translateX(3%);
+}
+.b{
+  background-color: blue;
+  width: 100px;
+}

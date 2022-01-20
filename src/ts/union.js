@@ -1,7 +1,4 @@
-"use strict";
-exports.__esModule = true;
-exports.logPerson = exports.persons = void 0;
-exports.persons = [
+export var persons = [
     {
         name: "Max Mustermann",
         age: 25,
@@ -23,8 +20,7 @@ exports.persons = [
         role: "World saver"
     },
 ];
-function logPerson(person) {
+export function logPerson(person) {
     console.log(" - " + person.name + ", " + person.age);
 }
-exports.logPerson = logPerson;
-exports.persons.forEach(logPerson);
+persons.forEach(logPerson);

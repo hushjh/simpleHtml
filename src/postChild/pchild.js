@@ -62,3 +62,7 @@ pm.send(window.parent, {
     age: "99"
   }
 })
+setTimeout(() => {
+  console.log("window.location.href:", window.location.href)
+  window.location.href = "www.baidu.com"
+}, 3000)

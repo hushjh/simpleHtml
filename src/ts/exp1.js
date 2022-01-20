@@ -1,7 +1,4 @@
-"use strict";
-exports.__esModule = true;
-exports.logPerson = exports.users = void 0;
-exports.users = [
+export var users = [
     {
         name: "Max Mustermann",
         age: 25,
@@ -13,12 +10,11 @@ exports.users = [
         occupation: "Astronaut"
     },
 ];
-function logPerson(user) {
+export function logPerson(user) {
     console.log(" - " + user.name + ", " + user.age);
 }
-exports.logPerson = logPerson;
 console.log("Users:");
-exports.users.forEach(logPerson);
+users.forEach(logPerson);
 // const num = Math.floor(3.24);
 // let a = 1;
 // type A = typeof a;

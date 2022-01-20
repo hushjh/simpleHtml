@@ -1,26 +1,46 @@
-
 <!DOCTYPE>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>position:fixed无效</title>
-<style>
-body {
-	height: 20000px;
-	transform: translate(0, 0);
-}
-.box {
-	position: fixed;
-	width: 100px;
-	height: 100px;
-	background: red;
-	top: 300px;
-}
- 
-</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>position:fixed无效</title>
+	<style>
+		body {}
+
+		.box {
+			border: 1px solid green;
+			width: 400px;
+			height: 200px;
+			background: #000;
+			margin: 0 auto;
+			margin-top: 200px;
+			background: linear-gradient(red 50%, blue 50%, blue 80%, white 80%);
+		}
+	</style>
 </head>
+
 <body>
-<div class="box">固定定位元素</div>
-<script src="./fixed.js"></script>
+	<div class="box"></div>
+	<!-- <script src="./fixed.js"></script> -->
+	<script src="./algorithm/encodeNumber.js"></script>
+	<script>
+		const throttle = (callback, delay = 800) => {
+			let timer = null;
+			return function () {
+				if (timer) {
+					clearTimeout(timer);
+				}
+				timer = setTimeout(() => {
+					callback.apply(this, arguments);
+					timer = null;
+				}, delay);
+			};
+		}
+		function resize() {
+			console.log("resize");
+		}
+		window.addEventListener("resize", throttle(resize, 100), false);
+	</script>
 </body>
+
 </html>

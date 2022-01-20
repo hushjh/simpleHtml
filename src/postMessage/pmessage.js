@@ -2,328 +2,399 @@
 const standardObj = {
   Flight: {
     "applicatStandard": {
-      "insuranceData": {
-        "companyCreditUnifyNum": "9111010875872474XN",
-        "employ": true,
-        "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
-        "sellType": "SELL"
-      },
-      "name": "朱立凯",
-      "phone": "13917296836",
-      "ruleId": "",
-      "standard": {
-        "Discount": "经济舱全价及以下",
-        "HasStandard": true,
-        "LimitAmount": "",
-        "StandardDes": "按照级别控制",
-        "Statue": "1",
-        "TimeStandard": "不限",
-        "Title": "总监"
-      }
-    },
-    "data": [
-      {
         "insuranceData": {
-          "companyCreditUnifyNum": "9111010875872474XN",
-          "employ": true,
-          "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
-          "sellType": "SELL"
+            "companyCreditUnifyNum": "9111010875872474XN",
+            "employ": true,
+            "expirationDate": null,
+            "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
+            "sellType": "SELL"
         },
         "name": "朱立凯",
         "phone": "13917296836",
         "ruleId": "",
         "standard": {
-          "Discount": "经济舱全价及以下",
-          "HasStandard": true,
-          "LimitAmount": "",
-          "StandardDes": "按照级别控制",
-          "Statue": "1",
-          "TimeStandard": "不限",
-          "Title": "总监"
-        },
-        "isOuter": "false"
-      }
+            "Discount": "经济舱6折及以下",
+            "HasStandard": true,
+            "LimitAmount": "",
+            "StandardDes": "按照级别控制",
+            "Statue": "1",
+            "TimeStandard": "不限",
+            "Title": "总监"
+        }
+    },
+    "data": [
+        {
+            "insuranceData": {
+                "companyCreditUnifyNum": "9111010875872474XN",
+                "employ": true,
+                "expirationDate": null,
+                "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
+                "sellType": "SELL"
+            },
+            "name": "朱立凯",
+            "phone": "13917296836",
+            "ruleId": "",
+            "standard": {
+                "Discount": "经济舱6折及以下",
+                "HasStandard": true,
+                "LimitAmount": "",
+                "StandardDes": "按照级别控制",
+                "Statue": "1",
+                "TimeStandard": "不限",
+                "Title": "总监"
+            }
+        }
     ],
     "errmsg": "success",
     "errno": "0",
     "extend": {
-      "msgId": "trip.standard",
-      "standardtype": "flight",
-      "ScheduleType": "Flight",
-      "Type": "OW",
-      "DepartureCity": "BJS",
-      "DepartureCityGeoId": "L00001",
-      "ArrivalCity": "WUH",
-      "ArrivalCityGeoId": "L01086",
-      "CooperatorId": "5824c8a6-5fbf-11eb-adbe-0242ac110002",
-      "CompanyId": "2a55af39-60d4-c0b9-bf27-08d89cc0d622",
-      "DepartureDate": "2021-07-21",
-      "ArrivalDate": "",
-      "Userlist": [
-        {
-          "isOuter": "false",
-          "phone": "13917296836",
-          "employeeNumber": "P1231"
-        }
-      ],
-      "CountPerson": 1
+        "msgId": "trip.standardFlight",
+        "standardtype": "flight",
+        "ScheduleType": "Flight",
+        "Type": "OW",
+        "DepartureCity": "SHA",
+        "DepartureCityGeoId": "L00509",
+        "ArrivalCity": "CAN",
+        "ArrivalCityGeoId": "L01262",
+        "CooperatorId": "5824c8a6-5fbf-11eb-adbe-0242ac110002",
+        "CompanyId": "2a55af39-60d4-c0b9-bf27-08d89cc0d622",
+        "DepartureDate": "2021-11-19",
+        "ArrivalDate": "",
+        "Userlist": [
+            {
+                "isOuter": "false",
+                "phone": "13917296836",
+                "employeeNumber": "P1231"
+            }
+        ],
+        "CountPerson": 1
     },
+    "controlName": "超标",
+    "controlScope": "org-text>刘凯集团>刘凯公司",
+    "controlStatus": "FALSE",
+    "controlType": "组织架构",
     "createDate": "",
     "creator": "",
     "departmentId": "f2036fa833c411eba83a13a7a34a2f7b,15469405c4cc11e9911f05ea727287d9,6c758fa655eb11e9940b25457df29ed4",
+    "iHotelOverstep": "TRUE",
+    "iHotelSharing": "FALSE",
+    "iPlaneOverstep": "FALSE",
+    "id": "11ebf98de3c6bed28d0791de0f6547cc",
+    "inlandHotelOverstep": "TRUE",
+    "inlandHotelSharing": "FALSE",
+    "inlandPlaneOverstep": "TRUE",
+    "inlandTrainOverstep": "TRUE",
+    "updateDate": "",
     "groupName": "待订",
     "groupScope": "组织机构>刘凯集团, 组织机构>景泰新能源（上海）有限公司, 组织机构>集团",
     "groupStatus": "TRUE",
     "groupType": "组织架构",
-    "id": "11eb7a72bf5aa076a2cc450f9487f3c3",
-    "updateDate": "",
     "trainConfig": {},
-    "msgId": "trip.standard",
+    "msgId": "ivRouteChange",
     "exceedBook": [
-      {
-        "flightExceedBookVO": {
-          "exceedControlMode": "EXCEED_BOOK",
-          "exceedEffectNode": "BILL_AFTER"
-        },
-        "hotelExceedBookVO": {
-          "exceedControlMode": "EXCEED_NOTBOOK_NOTVISIBLE",
-          "exceedEffectNode": "BILL_BEFORE"
-        },
-        "trainExceedBookVO": {
-          "exceedControlMode": "EXCEED_BOOK",
-          "exceedEffectNode": "BILL_BEFORE"
-        },
-        "userVO": {
-          "employeedNumber": "",
-          "phone": "13917296836"
+        {
+            "flightExceedBookVO": [],
+            "hotelExceedBookVO": [],
+            "trainExceedBookVO": [],
+            "userVO": {
+                "employeedNumber": "",
+                "phone": "13917296836"
+            }
         }
-      }
     ]
-  },
+},
   Train: {
     "applicatStandard": {
-      "HasStandard": true,
-      "StandardDes": "按照级别控制",
-      "Title": "总经理",
-      "insuranceData": {
-        "companyCreditUnifyNum": "9111010875872474XN",
-        "employ": true,
-        "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
-        "sellType": "SELL"
-      },
-      "name": "黄珊珊一",
-      "phone": "15925665404",
-      "ruleId": "104",
-      "standard": [
-        {
-          "SeatType": "二等座;无座",
-          "TrainType": "动车"
-        },
-        {
-          "SeatType": "硬卧;硬座",
-          "TrainType": "其它"
-        },
-        {
-          "SeatType": "二等座;无座",
-          "TrainType": "高铁"
-        }
-      ]
-    },
-    "data": [
-      {
         "HasStandard": true,
         "StandardDes": "按照级别控制",
-        "Title": "总经理",
+        "Title": "总监",
         "insuranceData": {
-          "companyCreditUnifyNum": "9111010875872474XN",
-          "employ": true,
-          "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
-          "sellType": "SELL"
+            "companyCreditUnifyNum": "9111010875872474XN",
+            "employ": true,
+            "expirationDate": null,
+            "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
+            "sellType": "SELL"
         },
-        "name": "黄珊珊一",
-        "phone": "15925665404",
-        "ruleId": "104",
+        "name": "朱立凯",
+        "phone": "13917296836",
+        "ruleId": "",
         "standard": [
-          {
-            "SeatType": "二等座;无座",
-            "TrainType": "动车"
-          },
-          {
-            "SeatType": "硬卧;硬座",
-            "TrainType": "其它"
-          },
-          {
-            "SeatType": "二等座;无座",
-            "TrainType": "高铁"
+            {
+                "SeatType": "二等座;无座",
+                "TrainType": "高铁/城际"
+            },
+            {
+              "SeatType": "二等座",
+              "TrainType": "动车"
           }
         ]
-      }
+    },
+    "data": [
+        {
+            "HasStandard": true,
+            "StandardDes": "按照级别控制",
+            "Title": "总监",
+            "insuranceData": {
+                "companyCreditUnifyNum": "9111010875872474XN",
+                "employ": true,
+                "expirationDate": null,
+                "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
+                "sellType": "SELL"
+            },
+            "name": "朱立凯",
+            "phone": "13917296836",
+            "ruleId": "",
+            "standard": [
+                {
+                    "SeatType": "二等座;无座",
+                    "TrainType": "高铁/城际"
+                },
+                {
+                  "SeatType": "二等座",
+                  "TrainType": "动车"
+                }
+            ]
+        }
     ],
     "errmsg": "success",
     "errno": "0",
     "extend": {
-      "msgId": "trip.standard",
-      "ScheduleType": "Train",
-      "Type": "OW",
-      "standardtype": "train",
-      "DepartureCity": "上海",
-      "DepartureCityGeoId": "L00509",
-      "ArrivalCity": "常州",
-      "ArrivalCityGeoId": "L00520",
-      "DepartureStationCode": "",
-      "ArrivalStationCode": "ESH",
-      "CooperatorId": "5824c8a6-5fbf-11eb-adbe-0242ac110002",
-      "CompanyId": "2a55af39-60d4-c0b9-bf27-08d89cc0d622",
-      "DepartureDate": "2021-08-04",
-      "ArrivalDate": "",
-      "Userlist": [
-        {
-          "phone": "15925665404",
-          "isOuter": "false",
-          "employeeNumber": "0003"
-        }
-      ],
-      "CountPerson": 1
+        "msgId": "trip.standardTrain",
+        "ScheduleType": "Train",
+        "Type": "OW",
+        "standardtype": "train",
+        "DepartureCity": "上海",
+        "DepartureCityGeoId": "L00509",
+        "ArrivalCity": "常州",
+        "ArrivalCityGeoId": "L00520",
+        "DepartureStationCode": "",
+        "ArrivalStationCode": "CZH",
+        "CooperatorId": "5824c8a6-5fbf-11eb-adbe-0242ac110002",
+        "CompanyId": "2a55af39-60d4-c0b9-bf27-08d89cc0d622",
+        "DepartureDate": "2021-11-19",
+        "ArrivalDate": "",
+        "Userlist": [
+            {
+                "phone": "13917296836",
+                "isOuter": "false",
+                "employeeNumber": "P1231"
+            }
+        ],
+        "CountPerson": 1
     },
-    "controlName": "ceshi",
-    "controlScope": "组织机构>集团>自动化测试组, 组织机构>集团>元年>ECS产品部",
-    "controlStatus": "TRUE",
+    "controlName": "超标",
+    "controlScope": "org-text>刘凯集团>刘凯公司",
+    "controlStatus": "FALSE",
     "controlType": "组织架构",
     "createDate": "",
     "creator": "",
-    "departmentId": "88b1312255eb11e9940bb73524c3d1d0,2cf04a5c18be11eb90950b0e99165539,37079d4d496d11eab6a433590bfe9ff1,11eb75837c514acb99713d4ed1e7a609,78bb647b385e11ebb3ecb7b37633d0a2,11eb8afc9397e96fb86f1db5cea9af5c",
+    "departmentId": "f2036fa833c411eba83a13a7a34a2f7b,15469405c4cc11e9911f05ea727287d9,6c758fa655eb11e9940b25457df29ed4",
     "iHotelOverstep": "TRUE",
-    "iHotelSharing": "TRUE",
+    "iHotelSharing": "FALSE",
     "iPlaneOverstep": "FALSE",
-    "id": "11ebdf940e494a88b2024d0664ed6e34",
+    "id": "11ebf98de3c6bed28d0791de0f6547cc",
     "inlandHotelOverstep": "TRUE",
-    "inlandHotelSharing": "TRUE",
-    "inlandPlaneOverstep": "FALSE",
-    "inlandTrainOverstep": "FALSE",
+    "inlandHotelSharing": "FALSE",
+    "inlandPlaneOverstep": "TRUE",
+    "inlandTrainOverstep": "TRUE",
     "updateDate": "",
-    "groupName": "122",
-    "groupScope": "组织机构>集团>元年>ECS产品部, 组织机构>集团>元年>元年测试部, 组织机构>集团>公司>测试部, 组织机构>集团>公司>开发部, 组织机构>集团>公司>产品部, 组织机构>集团>公司>武汉测试部",
+    "groupName": "待订",
+    "groupScope": "组织机构>刘凯集团, 组织机构>景泰新能源（上海）有限公司, 组织机构>集团",
     "groupStatus": "TRUE",
     "groupType": "组织架构",
     "trainConfig": {},
-    "msgId": "",
+    "msgId": "ivRouteChange",
     "exceedBook": [
-      {
-        "flightExceedBookVO": [],
-        "hotelExceedBookVO": [],
-        "trainExceedBookVO": [],
-        "userVO": {
-          "employeedNumber": "",
-          "phone": "15925665404"
+        {
+            "flightExceedBookVO": [],
+            "hotelExceedBookVO": [],
+            "trainExceedBookVO": [],
+            "userVO": {
+                "employeedNumber": "",
+                "phone": "13917296836"
+            }
         }
-      }
     ]
-  },
+},
   Hotel: {
     "applicatStandard": {
-      "insuranceData": {
-        "companyCreditUnifyNum": "9111010875872474XN",
-        "employ": true,
-        "expirationDate": null,
-        "ruleInsuranceNO": "QX000000128428",
-        "sellType": "SELL"
-      },
-      "name": "吕方方",
-      "phone": "13239177793",
-      "ruleId": "82",
-      "standard": {
-        "Currency": "CNY",
-        "CurrencyName": "人民币",
-        "CurrencyNameUS": "",
-        "HasStandard": true,
-        "MoneyStandard": 200,
-        "StandardDes": "按照级别控制",
-        "Statue": "1"
-      }
+        "insuranceData": {
+            "companyCreditUnifyNum": "9111010875872474XN",
+            "employ": true,
+            "expirationDate": null,
+            "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
+            "sellType": "SELL"
+        },
+        "name": "朱立凯",
+        "phone": "13917296836",
+        "ruleId": "",
+        "standard": {
+            "Currency": "CNY",
+            "CurrencyName": "人民币",
+            "CurrencyNameUS": "RMB",
+            "HasStandard": true,
+            "MoneyStandard": 200,
+            "StandardDes": "按照级别控制",
+            "Statue": "1"
+        }
     },
     "data": [
-      {
-        "insuranceData": {
-          "companyCreditUnifyNum": "9111010875872474XN",
-          "employ": true,
-          "expirationDate": null,
-          "ruleInsuranceNO": "QX000000128428",
-          "sellType": "SELL"
-        },
-        "name": "吕方方",
-        "phone": "13239177793",
-        "ruleId": "82",
-        "standard": {
-          "Currency": "CNY",
-          "CurrencyName": "人民币",
-          "CurrencyNameUS": "",
-          "HasStandard": true,
-          "MoneyStandard": 200,
-          "StandardDes": "按照级别控制",
-          "Statue": "1"
+        {
+            "insuranceData": {
+                "companyCreditUnifyNum": "9111010875872474XN",
+                "employ": true,
+                "expirationDate": null,
+                "ruleInsuranceNO": "78787777,QX000000128042,QX000000128431,QX000000128428",
+                "sellType": "SELL"
+            },
+            "name": "朱立凯",
+            "phone": "13917296836",
+            "ruleId": "",
+            "standard": {
+                "Currency": "CNY",
+                "CurrencyName": "人民币",
+                "CurrencyNameUS": "RMB",
+                "HasStandard": true,
+                "MoneyStandard": 200,
+                "StandardDes": "按照级别控制",
+                "Statue": "1"
+            }
         }
-      }
     ],
     "errmsg": "success",
     "errno": "0",
     "hasShareRoom": false,
     "maxRoomCount": 1,
     "extend": {
-      "msgId": "trip.standard",
-      "ScheduleType": "Hotel",
-      "Type": "OW",
-      "standardtype": "hotel",
-      "DepartureCity": "上海",
-      "DepartureCityGeoId": "L00509",
-      "ArrivalCity": "",
-      "ArrivalCityGeoId": "",
-      "CooperatorId": "5824c8a6-5fbf-11eb-adbe-0242ac110002",
-      "CompanyId": "2a55af39-60d4-c0b9-bf27-08d89cc0d622",
-      "DepartureDate": "2021-08-24",
-      "ArrivalDate": "2021-08-25",
-      "RoomCount": 1,
-      "Userlist": [
-        {
-          "isOuter": "false",
-          "phone": "13239177793",
-          "employeeNumber": "P23912"
-        }
-      ]
+        "msgId": "trip.standardHotel",
+        "ScheduleType": "Hotel",
+        "Type": "OW",
+        "standardtype": "hotel",
+        "DepartureCity": "武汉",
+        "DepartureCityGeoId": "L01086",
+        "ArrivalCity": "",
+        "ArrivalCityGeoId": "",
+        "CooperatorId": "5824c8a6-5fbf-11eb-adbe-0242ac110002",
+        "CompanyId": "2a55af39-60d4-c0b9-bf27-08d89cc0d622",
+        "DepartureDate": "2021-11-19",
+        "ArrivalDate": "2021-11-20",
+        "RoomCount": 1,
+        "Userlist": [
+            {
+                "isOuter": "false",
+                "phone": "13917296836",
+                "employeeNumber": "P1231"
+            }
+        ]
     },
     "controlName": "超标",
-    "controlScope": "组织机构>集团>公司>测试部",
+    "controlScope": "org-text>刘凯集团>刘凯公司",
     "controlStatus": "FALSE",
     "controlType": "组织架构",
     "createDate": "",
     "creator": "",
-    "departmentId": "11eb75837c514acb99713d4ed1e7a609,37079d4d496d11eab6a433590bfe9ff1,78bb647b385e11ebb3ecb7b37633d0a2,88b1312255eb11e9940bb73524c3d1d0,2cf04a5c18be11eb90950b0e99165539",
-    "iHotelOverstep": "FALSE",
+    "departmentId": "f2036fa833c411eba83a13a7a34a2f7b,15469405c4cc11e9911f05ea727287d9,6c758fa655eb11e9940b25457df29ed4",
+    "iHotelOverstep": "TRUE",
     "iHotelSharing": "FALSE",
     "iPlaneOverstep": "FALSE",
-    "id": "11eb781991edfa6fb7633599d790e019",
+    "id": "11ebf98de3c6bed28d0791de0f6547cc",
     "inlandHotelOverstep": "TRUE",
     "inlandHotelSharing": "FALSE",
     "inlandPlaneOverstep": "TRUE",
     "inlandTrainOverstep": "TRUE",
     "updateDate": "",
-    "groupName": "122",
-    "groupScope": "组织机构>集团>公司>开发部, 组织机构>集团>公司>测试部, 组织机构>集团>公司>产品部, 组织机构>集团>元年>产品部, 组织机构>集团>元年>元年测试部",
+    "groupName": "待订",
+    "groupScope": "组织机构>刘凯集团, 组织机构>景泰新能源（上海）有限公司, 组织机构>集团",
     "groupStatus": "TRUE",
     "groupType": "组织架构",
     "trainConfig": {},
     "msgId": "ivRouteChange",
     "exceedBook": [
-      {
-        "flightExceedBookVO": [],
-        "hotelExceedBookVO": [],
-        "trainExceedBookVO": [],
-        "userVO": {
-          "employeedNumber": "",
-          "phone": "13239177793"
+        {
+            "flightExceedBookVO": [],
+            "hotelExceedBookVO": [],
+            "trainExceedBookVO": [],
+            "userVO": {
+                "employeedNumber": "",
+                "phone": "13917296836"
+            }
         }
-      }
     ]
-  }
+},
+  InternationalHotel: {
+    "errmsg": "当前用户未配置相关差旅标准",
+    "errno": "1",
+    "extend": {
+        "msgId": "trip.standardInternationalHotel",
+        "ScheduleType": "InternationalHotel",
+        "Type": "OW",
+        "standardtype": "internationalhotel",
+        "DepartureCity": "澳门",
+        "DepartureCityGeoId": "F09999",
+        "ArrivalCity": "",
+        "ArrivalCityGeoId": "",
+        "CooperatorId": "67074509-77bb-11e9-a754-0242ac110002",
+        "CompanyId": "b4bac71e-a4d2-c835-02f0-08d6d9509d1a",
+        "DepartureDate": "2021-11-10",
+        "ArrivalDate": "2021-11-11",
+        "RoomCount": 1,
+        "Userlist": [
+            {
+                "isOuter": "false",
+                "phone": "13659845984",
+                "employeeNumber": "yn23232"
+            }
+        ]
+    },
+    "controlName": "拼房",
+    "controlScope": "组织机构>元年科技>武汉测试部, 组织机构>元年>ECS测试部, 组织机构>元年>ECS产品部, 组织机构>元年>ECS研发部, 组织机构>研发中心>测试部, 组织机构>zr测试组织机构-集团>zr测试组织机构-公司>zr测试组织机构-部门2",
+    "controlStatus": "TRUE",
+    "controlType": "组织架构",
+    "createDate": "",
+    "creator": "",
+    "departmentId": "e9303550bf2011e9bc547d6f20fb98e5,080a68ebc22111e99a534ff0f016339f,fe1ad295bf2011e9bc545fa782ceb7d4,abc5335ac3e711e99bc083dd54af898c",
+    "iHotelOverstep": "FALSE",
+    "iHotelSharing": "FALSE",
+    "iPlaneOverstep": "FALSE",
+    "id": "c68386145dea11eaad1a1fc636bba5f8",
+    "inlandHotelOverstep": "TRUE",
+    "inlandHotelSharing": "TRUE",
+    "inlandPlaneOverstep": "TRUE",
+    "inlandTrainOverstep": "TRUE",
+    "updateDate": "",
+    "groupName": "元年+元年科技+云快报",
+    "groupScope": "组织机构>元年科技, 组织机构>元年, 组织机构>研发中心, 组织机构>云快报",
+    "groupStatus": "TRUE",
+    "groupType": "组织架构",
+    "trainConfig": {},
+    "msgId": "ivRouteChange",
+    "exceedBook": [
+        {
+            "flightExceedBookVO": [
+                {
+                    "exceedControlMode": "EXCEED_NOTBOOK_NOTVISIBLE",
+                    "exceedEffectNode": "BILL_CHANGE"
+                }
+            ],
+            "hotelExceedBookVO": [
+                {
+                    "exceedControlMode": "EXCEED_NOTBOOK_NOTVISIBLE",
+                    "exceedEffectNode": "BILL_AFTER"
+                }
+            ],
+            "trainExceedBookVO": [
+                {
+                    "exceedControlMode": "EXCEED_BOOK",
+                    "exceedEffectNode": "BILL_CHANGE"
+                }
+            ],
+            "userVO": {
+                "employeedNumber": "",
+                "phone": "13659845984"
+            }
+        }
+    ]
+}
 }
 const trainConfig = {
   "method": "trainConfig",
@@ -343,19 +414,19 @@ const jumpTrainData = {
     "trainCode": ""
   },
   "hotelExtendParam": {
-    "hotelCity": "南京市"
+    "hotelCity": "北京市"
   },
-  "travelType": "train",
-  "originCity": "长沙",
-  "travelBeginDate": "2021-08-12 10:00:00",
-  "travelEndDate": "2021-08-13 10:00:00",
-  "ivInstruction": "jumpTrain"
+  "travelType": "hotel",
+  "originCity": "上海",
+  "travelBeginDate": "2021-12-3 10:00:00",
+  "travelEndDate": "2021-12-4 10:00:00",
+  "ivInstruction": "jumpHotel"
 }
 const flightListFilterData = {
-  "travelEndDate": "2021-08-16 17:00:00", // "2021-08-09 11:00:00",
+  "travelEndDate": "2021-11-16 17:00:00", // "2021-08-09 11:00:00",
   "travelType": "flight",
   "ivInstruction": "flightListFilter",
-  "travelBeginDate": "2021-08-16 12:00:00", // "2021-08-09 08:00:00",
+  "travelBeginDate": "2021-11-16 12:00:00", // "2021-08-09 08:00:00",
   "airExtendParam": {
     "airCabinLevel": "商务舱",
     "flightCode": null,
@@ -365,10 +436,10 @@ const flightListFilterData = {
   }
 }
 const flightListBackFilterData = {
-  "travelEndDate": "2021-08-09 11:00:00",
+  "travelEndDate": "2021-11-09 11:00:00",
   "travelType": "flight",
   "ivInstruction": "flightListBackFilter",
-  "travelBeginDate": "2021-08-09 08:00:00",
+  "travelBeginDate": "2021-11-09 08:00:00",
   "airExtendParam": {
     "airCabinLevel": "经济舱",
     "flightCode": null,
@@ -378,21 +449,21 @@ const flightListBackFilterData = {
   }
 }
 const trainListFilterData = {
-  "travelEndDate": "2021-08-06 24:00:00",
+  "travelEndDate": "2021-11-12 24:00:00",
   "travelType": "train",
   "ivInstruction": "trainListFilter",
-  "travelBeginDate": "2021-08-06 18:00:00",
+  "travelBeginDate": "2021-11-12 18:00:00",
   "airExtendParam": {
     "trainType": "动车",  // 高铁 动车 普通
     "trainCode": null,
-    "standardTrain": "合规车次",  // 合规车次  所有车次
+    "standardTrain": "所有车次",  // 合规车次  所有车次
   }
 }
 const trainListBackFilterData = {
-  "travelEndDate": "2021-08-06 12:00:00",
+  "travelEndDate": "2021-11-13 12:00:00",
   "travelType": "train",
   "ivInstruction": "trainListBackFilter",
-  "travelBeginDate": "2021-08-06 08:00:00",
+  "travelBeginDate": "2021-11-13 08:00:00",
   "airExtendParam": {
     "trainType": "动车",  // 高铁 动车 普通
     "trainCode": null,
@@ -415,9 +486,10 @@ const voiceData = {
   extend: {
     msgId: "robotData",
   },
-  data: hotelListFilterData
+  data: jumpTrainData
 };
-const iframeUrl = "http://192.168.0.100:12025/#/redirect?authenticate=a1IyaTJ0L3FBcXhzMjdxM2xDRWVvTW5GSHBKQWZOZkYvK3F4aGJYdjZZbWxmZ1plWngyOHh1R3RxN0hSZjNXb3BrbGxqaFUxT0kra1BKVTNySjNVeXc9PQ==&travelRequisitionNo=CLSQFK012104080006&itemDescription=&tripInfoId=&itineraryType=all&leaveTripDate=unlimited&returnTripDate=unlimited&departureCity=unlimited&arrivalsCity=unlimited&bookingType=&isSubmitItineraryOnlyWithFlight=yes&callbackURL=&companyId=b4bac71e-a4d2-c835-02f0-08d6d9509d1a&cooperatorId=97727ed9-3c6f-11e8-91e7-02004c4f4f50&returnURL=&businessType=&action=index&routerName=&lang=zh-CN&otherTravelersEnable=true&method=postMessage";
+const iframeUrl = "../postChild/pchild.html";
+// const iframeUrl = "http://192.168.95.143:8081/#/redirect?authenticate=RVpUK1RvL3RkY2FEMXkxTXVIKzg2dGtFZFBaSTA5N1ltVStzd2ZaTjIrV3d1MjJneS8rRk8yd3hlNWRtZi9SRFg1WDBFVzM5UnJMRnZ1MzNrV3VSTHc9PQ==&travelRequisitionNo=CLSQFK012104080006&itemDescription=&tripInfoId=&itineraryType=all&leaveTripDate=unlimited&returnTripDate=unlimited&departureCity=unlimited&arrivalsCity=unlimited&bookingType=&isSubmitItineraryOnlyWithFlight=yes&callbackURL=&companyId=b4bac71e-a4d2-c835-02f0-08d6d9509d1a&cooperatorId=97727ed9-3c6f-11e8-91e7-02004c4f4f50&returnURL=&businessType=&action=index&routerName=&lang=zh-CN&otherTravelersEnable=true&method=postMessage";
 const eleYkb = document.querySelector("#ykb");
 eleYkb.src = iframeUrl
 const ykbWindow = eleYkb.contentWindow;
@@ -445,7 +517,7 @@ class Pmessage {
     });
   }
   send(option, targetFrame = window.parent) {
-    // 默认是 父 window发出的消息
+    // 默认是 给父 window发消息
     targetFrame.postMessage(JSON.stringify(option), "*");
   }
   // 注册某一行为的回调
@@ -480,7 +552,65 @@ pm.registAction({ frameName: "", action: "trip.standard" }, function ts(msg) {
   }
   const { frameName = "", extend = {} } = orginalData;
   const { ScheduleType = "" } = extend;
-  pm.send(standardObj[ScheduleType], ykbWindow)
+  setTimeout(() => {
+    pm.send(standardObj[ScheduleType], ykbWindow)
+  }, 300);
+});
+pm.registAction({ frameName: "", action: "trip.standardFlight" }, function ts(msg) {
+  // console.log("parent receive,trip.standard data:", msg);
+  let orginalData = {};
+  try {
+    orginalData = JSON.parse(msg.data);
+  } catch (err) {
+    console.log(err);
+  }
+  const { frameName = "", extend = {} } = orginalData;
+  const { ScheduleType = "" } = extend;
+  setTimeout(() => {
+    pm.send(standardObj[ScheduleType], ykbWindow)
+  }, 300);
+});
+pm.registAction({ frameName: "", action: "trip.standardTrain" }, function ts(msg) {
+  console.log("parent receive,trip.standardTrain data:", msg);
+  let orginalData = {};
+  try {
+    orginalData = JSON.parse(msg.data);
+  } catch (err) {
+    console.log(err);
+  }
+  const { frameName = "", extend = {} } = orginalData;
+  const { ScheduleType = "" } = extend;
+  setTimeout(() => {
+    pm.send(standardObj[ScheduleType], ykbWindow)
+  }, 300);
+});
+pm.registAction({ frameName: "", action: "trip.standardHotel" }, function ts(msg) {
+  console.log("parent receive,trip.standardHotel data:", msg);
+  let orginalData = {};
+  try {
+    orginalData = JSON.parse(msg.data);
+  } catch (err) {
+    console.log(err);
+  }
+  const { frameName = "", extend = {} } = orginalData;
+  const { ScheduleType = "" } = extend;
+  setTimeout(() => {
+    pm.send(standardObj[ScheduleType], ykbWindow)
+  }, 300);
+});
+pm.registAction({ frameName: "", action: "trip.standardInternationalHotel" }, function ts(msg) {
+  console.log("parent receive,trip.standardInternationalHotel data:", msg);
+  let orginalData = {};
+  try {
+    orginalData = JSON.parse(msg.data);
+  } catch (err) {
+    console.log(err);
+  }
+  const { frameName = "", extend = {} } = orginalData;
+  const { ScheduleType = "" } = extend;
+  setTimeout(() => {
+    pm.send(standardObj[ScheduleType], ykbWindow)
+  }, 300);
 });
 pm.registAction({ frameName: "", action: "trainConfig" }, function ts(data) {
   // console.log("parent receive,trainConfig data:", data);
@@ -495,18 +625,18 @@ eleYkb.onload = () => {
   pm.send(voiceData, ykbWindow)
 };
 pm.registAction({ frameName: "", action: "ivRouteChange" }, function ts(data) {
-  console.log("parent receive,ivRouteChange:", data);
+  // console.log("parent receive,ivRouteChange:", data);
   const originalData = data.data;
   const { msgId, data: routeData } = JSON.parse(originalData);
-  console.log("msgId:", msgId, "routeData:", routeData);
+  // console.log("msgId:", msgId, "routeData:", routeData);
 });
 
 const eleBtn = document.querySelector(".btn-send-msg")
 eleBtn.onclick = () => {
   // flightListBackFilterData.travelEndDate = "2021-08-06 17:00:00",
-  hotelListFilterData.airExtendParam.hotelLevel = "经济连锁"
+  // hotelListFilterData.airExtendParam.hotelLevel = "经济连锁"
   // flightListFilterData.airExtendParam.airCabinLevel = "经济舱"
-  // trainListFilterData.airExtendParam.trainType = "高铁"
+  trainListFilterData.airExtendParam.trainType = "高铁"
   pm.send(voiceData, ykbWindow)
 }
 

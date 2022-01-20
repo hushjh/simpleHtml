@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "module": "esnext"
+  },
+  "include": ["./src/ts", "src/types/global.d.ts"],
+  "exclude": ["node_modules"]
+}
