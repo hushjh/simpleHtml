@@ -32,17 +32,23 @@
 // doc = conWindow.document
 // ele = `<html>  <head>    <meta http-equiv=\"Content-Type\" content=\"text/html;\">    <meta charset=\"utf-8\">    <title>消费平台跳转</title>  </head>  <body>    <script>window.location.href='https://testtripm.51ykb.com/?v=1623130554759#/redirect?authenticate=anhXWUFtVFg0L1RuWjFTK1UzNDZRVHlMSXFBMTB3TVhIMS9IQjhRTG9xcDBUQVlqNjVYaFNFUjlicjROSkNWbzVDVUVUczJ1TC9xaTFNVlQvcjFhK3c9PQ==&useAppLogin=false&thirdPartyAuth=iframe&travelRequisitionNo=&itemDescription=&tripInfoId=&itineraryType=all&leaveTripDate=unlimited&returnTripDate=unlimited&departureCity=unlimited&arrivalsCity=unlimited&bookingType=&isSubmitItineraryOnlyWithFlight=yes&travelerInfo=&callbackURL=&companyId=17fd0ec4-9631-cdeb-545c-08d7f3f9f98d&cooperatorId=770e5971-bc3c-11ea-9368-0242ac110002&returnURL=&businessType=&action=index&routerName=&lang=zh-CN&otherTravelersEnable=&method=&trainControlSwitch=false&tripConf=';</script>  </body></html>`
 // doc.write(ele)
-function getCommentValue (ele) {
-  var nodes = ele.childNodes;
-  var length = nodes.length;
-  var node = '';
+// function getCommentValue (ele) {
+//   var nodes = ele.childNodes;
+//   var length = nodes.length;
+//   var node = '';
 
-  for (var i = 0; i < length; i++) {
-      if (nodes[i].nodeName === '#comment') {
-        node = nodes[i];
-          break;
-      }
-  }
+//   for (var i = 0; i < length; i++) {
+//       if (nodes[i].nodeName === '#comment') {
+//         node = nodes[i];
+//           break;
+//       }
+//   }
 
-  return node;
-}
+//   return node;
+// }
+// const didiUrl = "https://open.es.xiaojukeji.com/webapp/feESWebappLogin/index"
+// const eleBtn = document.querySelector(".jump");
+// eleBtn.onclick = () => {
+//   console.log("click");
+//   window.location.href = didiUrl;
+// }

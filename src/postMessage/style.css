@@ -4,7 +4,7 @@ html,body{
   padding:0px;
 }
 .wrap{
-  height: 100%;
+  height: calc(100% - 50px);
 }
 #ykb{
   width:100%;
