@@ -34,6 +34,7 @@
     "shelljs": "^0.8.4"
   },
   "dependencies": {
+    "bencode": "^2.0.3",
     "node-fetch": "^3.1.0"
   }
 }

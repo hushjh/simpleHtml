@@ -7,3 +7,9 @@ function doSome(x: number | string) {
 
   // x.substr(1); // Error: 无法保证 `x` 是 `string` 类型
 }
+
+class Popper {
+	construct(reference: string, popper: string, options: string) {
+  }
+}
+const p = new Popper();

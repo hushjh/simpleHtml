@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer {
+      width: 400px;
+      height: 400px;
+      overflow: auto;
+      border: 1px solid #eee;
+      scrollbar-color:  #1890FF #91D5FF;  /* 第一个方块颜色，第二个轨道颜色(用于更改火狐浏览器样式) */
+      scrollbar-width: thin;  /* 火狐滚动条无法自定义宽度，只能通过此属性使滚动条宽度变细 */
+      -ms-overflow-style:none;  /* 隐藏滚动条（在IE和Edge两个浏览器中很难更改样式，固采取隐藏方式） */
+    }
+
+    .inner {
+      width: 100%;
+      height: 800px;
+    }
+
+   
+    /* 以下是chrome浏览器自定义滚动条样式方式 */
+    .outer::-webkit-scrollbar {
+      /*滚动条整体样式*/
+      width: 4px;
+      /*高宽分别对应横竖滚动条的尺寸*/
+      height: 4px;
+      scrollbar-arrow-color: red;
+
+    }
+
+    .outer::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius: 5px;
+      -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, 0.2);
+      scrollbar-arrow-color: red;
+    }
+
+    .outer::-webkit-scrollbar-track {
+      /*滚动条里面轨道*/
+      -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+      border-radius: 0;
+      background: rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="inner"></div>
+  </div>
+</body>
+
+</html>

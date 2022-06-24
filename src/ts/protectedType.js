@@ -6,29 +6,11 @@ function doSome(x) {
     }
     // x.substr(1); // Error: 无法保证 `x` 是 `string` 类型
 }
-var Foo = /** @class */ (function () {
-    function Foo() {
-        this.foo = 123;
-        this.common = '123';
+var Popper = /** @class */ (function () {
+    function Popper() {
     }
-    return Foo;
+    Popper.prototype.construct = function (reference, popper, options) {
+    };
+    return Popper;
 }());
-var Bar = /** @class */ (function () {
-    function Bar() {
-        this.bar = 123;
-        this.common = '123';
-    }
-    return Bar;
-}());
-function doStuff(arg) {
-    if (arg instanceof Foo) {
-        console.log(arg.foo); // ok
-        // console.log(arg.bar); // Error
-    }
-    if (arg instanceof Bar) {
-        // console.log(arg.foo); // Error
-        console.log(arg.bar); // ok
-    }
-}
-doStuff(new Foo());
-doStuff(new Bar());
+var p = new Popper();
