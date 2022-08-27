@@ -35,6 +35,9 @@
   },
   "dependencies": {
     "bencode": "^2.0.3",
-    "node-fetch": "^3.1.0"
+    "bittorrent-dht": "^10.0.4",
+    "magnet-uri": "^6.2.0",
+    "node-fetch": "^3.1.0",
+    "nodejs-websocket": "^1.7.2"
   }
 }
