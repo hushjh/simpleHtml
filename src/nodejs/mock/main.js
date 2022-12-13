@@ -30,7 +30,6 @@ function getServeUrl(port) {
 }
 function output(pathname, writer) {
   const data = mockIns.mock(pathname);
-  console.log("data:", data);
   if (!data) {
     writer.statusCode = 404
     writer.write("404");

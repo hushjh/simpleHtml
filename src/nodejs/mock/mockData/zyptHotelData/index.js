@@ -1,5 +1,9 @@
 const mockData = {};
-// 预订验证
+// 酒店配置
+mockData["/core/hotel/order/checkStandard"] = require("./checkStandard.js");
+// 酒店配置
+mockData["/global/customer/bookConf/hotel/get"] = require("./hotelBookConf.js");
+// 重单验证
 mockData["/core/hotel/order/repeatOrderValidate"] = require("./orderRepeatOrderValidate.js");
 // 预订验证
 mockData["/core/hotel/order/bookingValidate"] = require("./orderBookingValidate.js");
