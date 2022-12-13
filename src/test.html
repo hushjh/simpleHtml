@@ -4,23 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    html,body{
+      height:100%;
+    }
+  </style>
 </head>
 <body>
-  <div class="wrap">
+  <!-- <div class="wrap">
     <ul class="list"></ul>
     <p class="bottom-txt">以到底部</p>
     <p class="bottom" style="opacity: 0;"></p>
-    <!-- 注释 -->
     <div class="inner-box">
       <p>inner box</p>
     </div>
-    <button class="jump">跳转</button>
-  </div>
-  <iframe id="ykb" src="" frameborder="0"></iframe>
+    <button class="jump">跳转<</button>
+  </div> -->
+  <iframe id="ykb" src="" frameborder="0" width="100%" height="100%"></iframe>
 </body>
-<!-- <script src="test.js"></script> -->
-<script src="./nodejs/main.mjs" type="module"></script>
+<!-- <script src="parse.js"></script> -->
+<!-- <script src="./nodejs/main.mjs" type="module"></script>
 <script src="./nodejs/main.mjs" type="module"></script>
 <script src="./nodejs/fallback.js" nomodule></script>
-<script src="./nodejs/fallback.js" nomodule></script>
+<script src="./nodejs/fallback.js" nomodule></script> -->
+<script>
+  eleIframe = document.querySelector("#ykb");
+  const src1 = `https://testtripm.51ykb.com/?v=0121#/redirect?authenticate=WEpBUFljK2hXOXhaYWtwYStvZG5sU0xQWlpTUmkycFlnNWRIb2VaMlhqODhlZDc3SDFiTWhmU2xIdC9SQk1yOVViR25HclhDQnNwY3VDSHJQTXlSa3c9PQ==&useAppLogin=true&thirdPartyAuth=webview&companyId=2a55af39-60d4-c0b9-bf27-08d89cc0d622&cooperatorId=5824c8a6-5fbf-11eb-adbe-0242ac110002&data=%7B%22travelConsoleConfig%22%3A%7B%22bufferDays%22%3A-1%7D%2C%22thirdPartyAuth%22%3A%22webview%22%2C%22trainControlSwitch%22%3Atrue%2C%22useAppLogin%22%3A%22true%22%2C%22method%22%3A%22postMessage%22%2C%22lang%22%3A%22zh-CN%22%2C%22type%22%3A%22pcmyschedule%22%2C%22tripConf%22%3A%22%7B%5C%22ecsTabItems%5C%22%3A%7B%5C%22car%5C%22%3Afalse%2C%5C%22flight%5C%22%3Atrue%2C%5C%22hotel%5C%22%3Atrue%2C%5C%22intFlight%5C%22%3Afalse%2C%5C%22intHotel%5C%22%3Afalse%2C%5C%22other%5C%22%3Atrue%2C%5C%22train%5C%22%3Atrue%7D%7D%22%7D&callbackURL=&action=schedulelist&itineraryType=&bookingType=&lang=zh-CN&otherTravelersEnable=&method=postMessage&trainControlSwitch=true&tripConf={"ecsTabItems":{"car":false,"flight":true,"hotel":true,"intFlight":false,"intHotel":false,"other":true,"train":true}}&autoSearchRequisitionNo=`
+  const src2 = `http://192.168.110.9:12025/#/redirect?authenticate=RVNTRnFWYjVkendwVGFmRXdGdGlURHFTeEx3YWFUSURqaUpmWDJiT2xOSEhvU0NmTEZLbTNMaVVyWThSRmVENzRhY2wweEdVNERrU21wdzVSbTJkNmc9PQ==&travelRequisitionNo=CLSQFK012211010003&itemDescription=&tripInfoId=&itineraryType=all&leaveTripDate=unlimited&returnTripDate=unlimited&departureCity=unlimited&arrivalsCity=unlimited&bookingType=&isSubmitItineraryOnlyWithFlight=yes&callbackURL=&companyId=54f97880-87bd-c52a-a6a0-08d5914bcd2c&cooperatorId=97727ed9-3c6f-11e8-91e7-02004c4f4f50&returnURL=&businessType=&action=order&routerName=&otherTravelersEnable=true&lang=zh-CN`
+  eleIframe.src = src1
+</script>
 </html>
