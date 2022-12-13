@@ -5,14 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
+  <style>
+    .container{
+      width: 200px;
+      border: 1px solid red;
+    }
+    .more{
+      height: auto;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="root"></div>
-  <iframe id="ykb" src="" frameborder="0"></iframe>
-  <script src="./index.js"></script>
+  <!-- <div id="root"></div>
+  <iframe id="ykb" src="" frameborder="0"></iframe> -->
+  <!-- <script src="./index.js"></script> -->
+  <div class="container">
+    <p class="more">
+      <span class="name">在实际的项目中，由于文字内容的长度不确定性和页面布局的固定性，难免会出现文字内容超过div（或其他标签，下同）区域的情况，</span>
+      <span>经济型</span>
+    </p>
+  </div>
+  <script>
+    function setEllips(){
+      const moreEle = document.querySelector(".more");
+      const nameEle = document.querySelector(".name");
+      const offsetHeight = moreEle.offsetHeight;
+      const innerHtml = nameEle.innerHTML;
+      for(i = 0; i< innerHtml.length; i++) {
+        nameEle.innerHTML = innerHtml.substr(0, i);
+        console.log("moreEle.offsetHeight:", moreEle.offsetHeight);
+        if (moreEle.offsetHeight > 44) {
+          nameEle.innerHTML = innerHtml.substr(0, i - 3) + "...";
+          break;
+        }
+      }
+    }
+    setEllips();
+  </script>
 </body>
-
 </html>
