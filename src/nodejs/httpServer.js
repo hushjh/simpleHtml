@@ -16,4 +16,4 @@ const server = http.createServer((req, res) => {
   })
 });
 console.log("服务端服务启动成功，监听80端口");
-server.listen(80);
+server.listen(9527);
