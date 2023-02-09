@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,body{
+      height:100%;
+    }
+  </style>
+  <script src="./htmlDownload/download.js"></script>
+</head>
+  <textarea id="my-textarea"></textarea>
+  <button onclick="downloadTxt()">downloadTxt</button>
+  <button onclick="downloadJson()">downloadJson</button>
+  <button onclick="downloadXml()">downloadXml</button>
+  <button onclick="downTableExcel()">downTableExcel</button>
+  <!-- https://tpc.googlesyndication.com/simgad/12002956395169632713?w=100&h=100 -->
+  <!-- 若是href属性值为远程url,则具有同源策略，只有同源的url才会进行文件下载，若是不同源不会下载而是跳转！ -->
+  <a href="http://127.0.0.1:5500/src/htmlDownload/123.jpg" download="simgad">downloadImg</a>
+  <button onclick="downHttpPic()">下载跨域图片</button>
+  <img src="https://tpc.googlesyndication.com/simgad/12002956395169632713?w=100&h=100"/>
+</body>
+<script>
+</script>
+</html>
